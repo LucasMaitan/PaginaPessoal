@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #111825;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 16px 80px;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #ddddddb8;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/fundo-produtos-06.jpg);
+  padding: 70px 20px;
+  color: rgb(241, 243, 245);
+}
+
+header a {
+  font-size: 90px;
+  align-items: center;
+  color: rgb(241, 243, 245);
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 50px;
+}
+h2 {
+  font-family: cursive;
+  font-size: 25px;
+}
+
+#profile {
+  background-image: url(./assets/fundo-branco-monocromatico-de-estilo-de-papel_52683-66443.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 515px;
+  margin: 0;
+}
+
+#profile-right {
+  text-align: end;
+  width: 40%;
+  padding: 24px;
+  float: left;
+}
+#profile-right img {
+  width: 380px;
+}
+
+#profile-left {
+  align-items: first baseline;
+  width: 60%;
+  max-width: 800px;
+  padding: 80px;
+  float: left;
+  text-align: justify;
+}
+
+#social-links {
+  display: flex;
+  justify-content: left;
+  padding: 24px 0;
+  font-size: 30px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  filter: brightness(50%) sepia(100%) hue-rotate(100deg);
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(131, 119, 119, 0.241);
+}
