@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <script src="menu.js" defer></script>
+
   </head>
   <body>
     <header>
-      <a><ion-icon name="hardware-chip-outline"></ion-icon></a>
-      <h1>Lucas Maitan</h1>
-      <br />
-      <h2>Engenheiro de Controle e Automação</h2>
+
+        <div class="btn-abrir" id="btn-menu">
+          <ion-icon name="menu"></ion-icon>
+        </div>
+
+        <div class="texto-nome">
+          <a><ion-icon name="hardware-chip-outline"></ion-icon></a>
+          <h1>Lucas Maitan</h1>
+          <br />
+          <h2>Engenheiro de Controle e Automação</h2>
+        </div>
+      
     </header>
 
     <div class="navbar">
       <ul>
         <li><a href="./index.html">MENU</a></li>
         <li><a href="#">SOBRE</a></li>
-        <li>
-          <a href="https://github.com/lucasmaitan" target="_blank">PROJETOS</a>
-        </li>
+        <li><a href="https://github.com/lucasmaitan" target="_blank">PROJETOS</a></li>
         <li><a href="./email.html" target="_blank">CONTATO</a></li>
       </ul>
     </div>
+
     <div id="profile">
       <div id="profile-right">
         <img src="./assets/FotoLucas.png" alt="foto de lucas de perfil" />
@@ -69,5 +79,22 @@
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></script>
     </div>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <ion-icon name="close"></ion-icon>
+        </div>
+
+        <div class="navbar-mobile">
+          <ul>
+            <li><a href="./index.html">MENU</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="https://github.com/lucasmaitan" target="_blank">PROJETOS</a></li>
+            <li><a href="./email.html" target="_blank">CONTATO</a></li>
+          </ul>
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </div>
+    
   </body>
 </html>
