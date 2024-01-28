@@ -3,83 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,600&display=swap" rel="stylesheet">
     <title>Menu</title>
     <link rel="stylesheet" href="./style.css" />
-
-    <script src="menu.js" defer></script>
+    
+  <script src="menu.js" defer></script>
 
   </head>
   <body>
-    <header>
+  <main>
+    <section class="principal">
+      <header>
 
+        <div class="texto-nome">      
+          <h1>Lucas Maitan</h1>
+          <h2>Engenheiro de Controle e Automação</h2>
+        </div>
+    
         <div class="btn-abrir" id="btn-menu">
           <ion-icon name="menu"></ion-icon>
         </div>
 
-        <div class="texto-nome">
-          <a><ion-icon name="hardware-chip-outline"></ion-icon></a>
-          <h1>Lucas Maitan</h1>
-          <br />
-          <h2>Engenheiro de Controle e Automação</h2>
+        <div class="navbar">
+          <ul>
+            <li><a href="./index.html">MENU</a></li>
+            <li><a href="#" id="bt-sobre">SOBRE</a></li>
+            <li><a href="https://github.com/lucasmaitan" target="_blank">PROJETOS</a></li>
+          </ul>
         </div>
-      
-    </header>
 
-    <div class="navbar">
-      <ul>
-        <li><a href="./index.html">MENU</a></li>
-        <li><a href="#">SOBRE</a></li>
-        <li><a href="https://github.com/lucasmaitan" target="_blank">PROJETOS</a></li>
-        <li><a href="./email.html" target="_blank">CONTATO</a></li>
-      </ul>
-    </div>
-
-    <div id="profile">
-      <div id="profile-right">
-        <img src="./assets/FotoLucas.png" alt="foto de lucas de perfil" />
-      </div>
-      <div id="profile-left">
-        <p>
-          "Sou um profissional apaixonado por tecnologia, com experiência
-          nas áreas de automação e programação. Durante minha carreira, tive a oportunidade
-          de trabalhar em projetos desafiadores que permitiram meu desenvolvimento. 
-          Minha abordagem é focada em disciplina e muita determinação, e estou sempre em busca de
-          oportunidades para aprender e crescer."
-        </p>
-
-        <div id="social-links">
-          <a href="https://github.com/lucasmaitan" target="_blank">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/lucas-maitan-7b699850/"
-            target="_blank"
-          >
-            <ion-icon name="logo-Linkedin"></ion-icon>
-          </a>
-
-          <a href="https://www.facebook.com/lucas.maitan.9" target="_blank">
-            <ion-icon name="logo-Facebook"></ion-icon>
-          </a>
-
-          <a href="https://instagram.com/lucas_maitan" target="_blank">
-            <ion-icon name="logo-Instagram"></ion-icon>
-          </a>
+        <div class="contato">
+            ><a><button id="bt-contato">CONTATO</button></a>
         </div>
-      </div>
 
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
-    </div>
+      </header>
 
-    <div class="menu-mobile" id="menu-mobile">
+    <section class="menu">
+        <div class="interface">
+              <div class="flex">
+
+                <div class="texto-menu">
+                    <h1>Impulsionando a inovação através da transformação digital.</h1>
+                    <p>A tecnologia transforma nossas vidas de maneiras inimagináveis, simplificando tarefas, conectando pessoas globalmente e impulsionando a criatividade em todos os setores.</p>
+                </div>
+
+                <div class="imagem-menu">
+                  <img src="./assets/FotoLucas.png" alt="foto de lucas de perfil" />
+                </div>
+
+            </div>
+
+            <div class="linha-colorida"></div>
+
+            <div id="social-links">
+              <a href="https://github.com/lucasmaitan" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+    
+              <a href="https://www.linkedin.com/in/lucas-maitan-7b699850/" target="_blank">
+                <ion-icon name="logo-Linkedin"></ion-icon>
+              </a>
+    
+              <a href="https://www.facebook.com/lucas.maitan.9" target="_blank">
+                <ion-icon name="logo-Facebook"></ion-icon>
+              </a>
+    
+              <a href="https://instagram.com/lucas_maitan" target="_blank">
+                <ion-icon name="logo-Instagram"></ion-icon>
+              </a>
+            </div>
+
+            <script
+              type="module"
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+              ></script>
+              <script
+              nomodule
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+              ></script>
+
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
         <div class="btn-fechar">
           <ion-icon name="close"></ion-icon>
         </div>
@@ -87,13 +94,85 @@
         <div class="navbar-mobile">
           <ul>
             <li><a href="./index.html">MENU</a></li>
-            <li><a href="#">SOBRE</a></li>
+            <li><a href="#" id="bt-sobre">SOBRE</a></li>
             <li><a href="https://github.com/lucasmaitan" target="_blank">PROJETOS</a></li>
-            <li><a href="./email.html" target="_blank">CONTATO</a></li>
+            <li><a href="#" id="bt-contato">CONTATO</a></li>
           </ul>
         </div>
+        </div>
         <div class="overlay-menu" id="overlay-menu"></div>
+
+    </section>
+
+    <section class="sobre">
+        <div class="interface">
+          <div class="flex">
+
+            <div class="imagem-sobre">
+              <img src="./assets/imagem-sobre.png" alt="foto de lucas de perfil" />
+            </div>
+
+            <div class="texto-sobre">
+                <h1>Olá!<br>Sou <span>Lucas Maitan.</span></h1>
+                   <p>Bem vindo a minha pagina pessoal! 
+                      Sou apaixonado por tecnologia, e acredito no poder que a transformação digital tem influênciado nossas vidas.</p>
+                  </p>Profissionalmente, atuo com automação industrial buscando otimização de processos. Minha jornada profissional tem sido marcada por muitos desafios, buscando aprimoramento e inovação das tecnologias aplicadas.</p>
+                  </p>Fora do ambiente de trabalho, gosto de me envolver em projetos de IoT, criando soluções e tecnologias para equipamentos residenciais.
+                      Também mantenho sempre um tempo com a família e amigos.</p>
+                  </p>Este espaço é dedicado a compartilhar minhas experiências, ideias e projetos. Espero que você encontre inspiração enquanto exploramos juntos essa área virtual.
+                      Agradeço por fazer parte desta jornada!</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email">
+      <div class="interface">
+        <div class="block">
+
+          <form action="https://formsubmit.co/lucas.maitan94@gmail.com" method="post">
+            <h2>Contato</h2>
+            <input type="hidden" name="_captcha" value="false">
+            <label>Nome</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Digite seu nome"
+              autocomplete="off"
+              required
+            />
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              autocomplete="off"
+              required
+            />
+            <label>Telefone</label>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Telefone para contato"
+              autocomplete="off"
+            />
+            <label>Mensagem</label>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Digite sua mensagem"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+          </form>
+        
+      </div>
     </div>
-    
+  </section>
+
+
+  </main>
   </body>
 </html>
